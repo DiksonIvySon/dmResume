@@ -1,13 +1,15 @@
 import { useState } from 'react'
 import './App.css'
+import ResumeSection from './components/ResumeSection.jsx'
+import MainButtons from './components/MainButtons.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      
-    </>
+    <main className='app'>
+      <ResumeSection />
+      <MainButtons />
+    </main>
   )
 }
 
