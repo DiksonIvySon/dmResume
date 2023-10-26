@@ -16,9 +16,12 @@
     height: 40px;
 }
 
-.clearButton > div {
+.mainButton > div {
     display: flex;
     align-items: center;
+}
+
+.clearButton > div {
     color: red;
 }
 
