@@ -7,8 +7,8 @@ function App() {
 
   return (
     <main className='app'>
-      <ResumeSection />
       <MainButtons />
+      <ResumeSection />
     </main>
   )
 }
