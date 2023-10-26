@@ -1,3 +1,55 @@
+
+
 .resume-section {
-    background-color: red;
+    padding: 10px;
+    background-color: #ccd8da;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.resume-header {
+    background-color: #302f44;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-inline: 20px;
+}
+
+.personal-info-container {
+    flex: 1;
+}
+
+.display-personal-info {
+    margin-bottom: 18px;
+}
+
+.display-full-name {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.place-holder img {
+    width: 110px;
+}
+
+.display-info {
+    background-color: white;
+    color: black;
+}
+
+.display-contact-info {
+    display: flex;
+    justify-content: center;
+}
+
+.display-contact-info > div {
+    margin:0px 10px;
+}
+
+.display-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }

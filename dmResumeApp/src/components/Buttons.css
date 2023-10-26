@@ -39,3 +39,7 @@ button:hover {
     color: gold;
     cursor: pointer;
 }
+
+p {
+    margin: 0;
+}
