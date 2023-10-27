@@ -1,0 +1,139 @@
+/* styling the fonts*/
+.fonts-container > div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.fonts-container h1 {
+    margin-bottom: 0;
+}
+
+.font {
+    flex: 1;
+    background-color: #8f98ab;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.font:hover {
+    color: white;
+}
+
+.fonts-container .time-new-roman {
+    font-family: 'Times New Roman';
+}
+
+.fonts-container .serif {
+    font-family: serif;
+}
+
+.fonts-container .sans-serif {
+    font-family: sans-serif;
+}
+
+.fonts-container .arial {
+    font-family: Arial;
+}
+
+.fonts-container .cochin {
+    font-family: Cochin;
+}
+
+/* styling the colors */
+.color-item h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.colors-container > h1 {
+    margin-bottom: 0;
+}
+
+.color-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.color-item {
+    flex: 1;
+}
+
+.color-item input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.color-item input::-webkit-color-swatch {
+border-radius: 15px;
+border: none;
+}
+
+.color-item input::-moz-color-swatch {
+    border-radius: 15px;
+    border: none;
+}
+
+/* styling layouts */
+.layouts-container > h1 {
+    margin-bottom: 0;
+}
+
+.layouts {
+    display: flex;
+    justify-content: space-around;
+}
+
+.layouts > div{
+    flex: 1;
+    background-color: gray;
+    height: 120px;
+    margin: 10px;
+}
+
+.horizontal-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: "accent"
+                         "content";
+}
+
+.vertical-layout {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas: 'accent content';
+}
+
+.switch-layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'content accent';
+}
+
+.accent {
+    grid-area: accent;
+    background-color: #8f98ab;
+}
+
+.accent p {
+    padding: 5px;
+}
+
+.content {
+    grid-area: content;
+    background-color: white;
+}
+

@@ -62,4 +62,5 @@ p {
 
 .show-element {
     display: block;
+    margin-inline: 5px;
 }
