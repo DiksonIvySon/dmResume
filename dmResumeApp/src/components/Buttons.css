@@ -43,3 +43,22 @@ button:hover {
 p {
     margin: 0;
 }
+
+.Save button {
+    display: flex;
+    align-items: center;
+}
+
+.downArrow img:hover {
+    transform: translateY(10px);
+    transition: all 0.5s ease-out;
+}
+
+/* styling the visibility*/
+.hide-element {
+    display: none;
+}
+
+.show-element {
+    display: block;
+}
