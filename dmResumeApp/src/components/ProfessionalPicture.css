@@ -1,0 +1,51 @@
+
+.uploading-pic-container {
+    display: flex;
+    gap: 20px;
+}
+
+.picture {
+    background-color: gray;
+    width: 100px;
+    height: 100px;
+    margin-inline: 10px;
+}
+
+.picture img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.upload-button {
+    margin-top: 60px;
+}
+
+/* styling the picture border style */
+.picture-border-style > div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.border-style {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.border-style-1 img {
+    width: 70px;
+    margin: 0;
+}
+
+.border-style-2 img {
+    width: 70px;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.border-style-3 img {
+    width: 70px;
+    margin: 0;
+    border-radius: 50%;
+}

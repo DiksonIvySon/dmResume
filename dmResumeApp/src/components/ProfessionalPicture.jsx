@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import './Buttons.css'
+import './ProfessionalPicture.css'
 import downArrow from './icons/downArrow.png'
 import proPicture from './icons/profilePicture.png'
+import placeholder from './icons/placeholder-icon.jpg'
 
 function ProfessionalPicture() {
   const [visibility, setVisibility] = useState("hide-element")
@@ -31,7 +33,37 @@ function ProfessionalPicture() {
         </div>
         <div className={visibility} >
           <hr />
-          <h1>man</h1>
+          <div className='uploading-pic-container'>
+            <div className='picture'>
+              <img src={placeholder} alt="" />
+            </div>
+            <div className='upload-button'>
+              <button>Upload New Picture</button>
+            </div>
+          </div>
+          <div className='picture-border-style'>
+            <h1>Picture Border Styles</h1>
+            <div>
+                <dir className='border-style'>
+                    <div className='border-style-1'>
+                      <img src={placeholder} alt="" />
+                    </div>
+                    <h3>Sharp Border</h3>
+                </dir>
+                <dir className='border-style'>
+                    <div className='border-style-2'>
+                      <img src={placeholder} alt="" />
+                    </div>
+                    <h3>Smooth Border</h3>
+                </dir>
+                <dir className='border-style'>
+                    <div className='border-style-3'>
+                      <img src={placeholder} alt="" />
+                    </div>
+                    <h3>Round Border</h3>
+                </dir>
+            </div>
+          </div>
         </div>
     </div>
   )
