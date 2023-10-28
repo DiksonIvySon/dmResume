@@ -1,14 +1,13 @@
 
 .uploading-pic-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
-.picture {
-    background-color: gray;
-    width: 100px;
-    height: 100px;
-    margin-inline: 10px;
+.show h1, h3 {
+    margin: 0;
 }
 
 .picture img {
@@ -16,14 +15,14 @@
     object-fit: cover;
 }
 
-.upload-button {
-    margin-top: 60px;
+.upload-buttons button {
+    margin: 10px;
+    height: 50px;
 }
 
 /* styling the picture border style */
-.picture-border-style > div {
+.picture-border-style {
     display: flex;
-    justify-content: space-around;
 }
 
 .border-style {
@@ -31,6 +30,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin: 10px;
 }
 
 .border-style-1 img {
