@@ -3,8 +3,9 @@ import './ResumeSection.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhone, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import placeholder from './icons/placeholder-icon.jpg'
+import PersonalDetails from './PersonalDetails.jsx'
 
-function ResumeSection() {
+function ResumeSection(props) {
   return (
     <div className='resume-section'>
         <div className='resume-header'>
@@ -13,7 +14,7 @@ function ResumeSection() {
           </div>
           <div className='personal-info-container'>
               <div className='display-personal-info'>
-                  <h1 className='display-full-name'>DIKSON THABO MANGANYE</h1>
+                  <h1 className='display-full-name'>Dikson Manganye {props.position}</h1>
                   <p className='display-position'>Front-End Developer Engineer</p>
               </div>
               <div className='display-contact-info'>

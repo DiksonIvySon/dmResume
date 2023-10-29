@@ -3,8 +3,9 @@ import './Buttons.css'
 import './PersonalDetails.css'
 import downArrow from './icons/downArrow.png'
 import personal_Details from './icons/personalDetails.png'
+import ResumeSection from './ResumeSection.jsx'
 
-function personalDetails() {
+function PersonalDetails() {
   const [visibility, setVisibility] = useState("hide-element");
   const [name, setName] = useState("Dikson");
   const [position, setPosition] = useState("Front-End Dev");
@@ -23,6 +24,7 @@ function personalDetails() {
       setVisibility(newVisibility)
     }
   }
+
 
   return (
     <div className='personalDetails'>
@@ -45,7 +47,7 @@ function personalDetails() {
                 onChange={(e) => setName(e.target.value)}
               />
             </label>
-            <label>Position: <span>Required</span> <br />
+            <label>Position: <span>Recommended</span> <br />
               <input
                 type="text" 
                 value={position}
@@ -78,9 +80,9 @@ function personalDetails() {
                 <button type='button'>Done</button>
             </div>
           </form>
-        </div>
+      </div>
     </div>
   )
 }
 
-export default personalDetails
+export default PersonalDetails

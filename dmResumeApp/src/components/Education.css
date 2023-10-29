@@ -1,0 +1,44 @@
+
+
+.hide-education-form {
+    display: none;
+}
+
+.show-education-form {
+    display: block;
+}
+
+.show-education-form {
+    text-align: start;
+    margin-left: 10px;
+}
+
+.show-education-form input {
+    padding: 10px;
+    width: 100%;
+    max-width: 560px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.show-education-form label {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.show-education-form label span {
+    font-size: 15px;
+    color: gray;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.form-buttons button {
+    margin: 10px;
+    min-width: 100px;
+}

@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../My_Portfolio/My_Portfolio"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "myCodeSpace",
+		"cSpell.words": [
+			"Gauteng",
+			"tailwindcss"
+		]
+	}
+}
