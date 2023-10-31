@@ -5,13 +5,31 @@ import downArrow from './icons/downArrow.png'
 import personal_Details from './icons/personalDetails.png'
 import ResumeSection from './ResumeSection.jsx'
 
-function PersonalDetails() {
-  const [visibility, setVisibility] = useState("hide-element");
-  const [name, setName] = useState("Dikson");
-  const [position, setPosition] = useState("Front-End Dev");
-  const [email, setEmail] = useState("ivyCodes@gmail");
-  const [number, setNumber] = useState("0750638263");
-  const [location, setLocation] = useState("Joburg")
+function PersonalDetails({handlePersonChange, person}) {
+const [visibility, setVisibility] = useState("hide-element");
+/*const [person, setPerson] = useState({
+    fulName: "Dikson",
+    position: "Front-End Dev",
+    email: "ivyCode@gmail.com",
+    number: "0735367348",
+    stayLocation: "J"
+  })
+
+  console.log(person.position)
+
+  //handlePersonChange
+  const handlePersonChange = (e) => { 
+    const name = e.target.name;
+    const value = e.target.value;
+    let newState = {...person, [name]: value };
+    setPerson(newState)
+    ResumeSection
+    /* setPerson((prev) => {
+       return {...prev, [name]: value };
+     })*/
+    
+  //}
+  
 
   //toggle visibility of the form
   const handleVisibility = () => {
@@ -43,41 +61,46 @@ function PersonalDetails() {
             <label>Full Name: <span>Required</span> <br />
               <input
                 type="text" 
-                value={name}
-                onChange={(e) => setName(e.target.value)}
+                name='fulName'
+                value={person.fulName}
+                onChange={handlePersonChange}
               />
             </label>
             <label>Position: <span>Recommended</span> <br />
               <input
                 type="text" 
-                value={position}
-                onChange={(e) => setPosition(e.target.value)}
+                name='position'
+                value={person.position}
+                onChange={handlePersonChange}
               />
             </label>
             <label>E-mail: <span>Required</span> <br />
               <input
                 type="email" 
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                name='email'
+                value={person.email}
+                onChange={handlePersonChange}
               />
             </label>
             <label>Contact Number: <span>Required</span> <br />
               <input
                 type="number" 
-                value={number}
-                onChange={(e) => setNumber(e.target.value)}
+                name='number'
+                value={person.number}
+                onChange={handlePersonChange}
               />
             </label>
-            <label>Location: <span>Recommended</span> <br />
+            <label>stayLocation: <span>Recommended</span> <br />
               <input
                 type="text" 
-                value={location}
-                onChange={(e) => setLocation(e.target.value)}
+                name='stayLocation'
+                value={person.stayLocation}
+                onChange={handlePersonChange}
               />
             </label>
             <div className='form-buttons'>
                 <button type='reset'>Reset</button>
-                <button type='button'>Done</button>
+                <button type='button' onClick={handleVisibility}>Done</button>
             </div>
           </form>
       </div>
