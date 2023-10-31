@@ -98,6 +98,22 @@ const [visibility, setVisibility] = useState("hide-element");
                 onChange={handlePersonChange}
               />
             </label>
+            <label>LinkedIn Link: <span>Optional</span> <br />
+              <input
+                type="url" 
+                name='linkedIn_link'
+                value={person.linkedIn_link}
+                onChange={handlePersonChange}
+              />
+            </label>
+            <label>Personal Portfolio Link: <span>Optional</span> <br />
+              <input
+                type="url" 
+                name='portfolioLink'
+                value={person.portfolioLink}
+                onChange={handlePersonChange}
+              />
+            </label>
             <div className='form-buttons'>
                 <button type='reset'>Reset</button>
                 <button type='button' onClick={handleVisibility}>Done</button>

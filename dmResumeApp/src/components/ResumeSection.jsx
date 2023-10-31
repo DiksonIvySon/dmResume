@@ -1,11 +1,11 @@
 import React from 'react'
 import './ResumeSection.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faPhone, faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faPhone, faLocationDot, faLink } from '@fortawesome/free-solid-svg-icons'
 import placeholder from './icons/placeholder-icon.jpg'
 import PersonalDetails from './PersonalDetails.jsx'
 
-function ResumeSection({nameProp, positionProp, emailProp, numberProp, locationProp, onChange}) {
+function ResumeSection({nameProp, positionProp, emailProp, numberProp, locationProp, linkedIn_linkProp, portfolioLinkProp, onChange}) {
   return (
     <div className='resume-section'>
         <div className='resume-header'>
@@ -29,6 +29,20 @@ function ResumeSection({nameProp, positionProp, emailProp, numberProp, locationP
                   <div className='display-location display-content'>
                       <FontAwesomeIcon icon={faLocationDot} />
                       <p>{locationProp}</p>
+                  </div>
+              </div>
+              <div className='personal-links'>
+                  <div className=''>
+                      <a target='_blank' href={linkedIn_linkProp}>
+                        <FontAwesomeIcon icon={faLink} />
+                        {linkedIn_linkProp}
+                      </a>
+                  </div>
+                  <div className=''>
+                      <a target='_blank' href={portfolioLinkProp}>
+                        <FontAwesomeIcon icon={faLink} />
+                        {portfolioLinkProp}
+                      </a>
                   </div>
               </div>
           </div>

@@ -16,7 +16,9 @@ function App(props) {
     position: "Front-End Developer",
     email: "ivyCode@gmail.com",
     number: "0735367348",
-    stayLocation: "Johannesburg"
+    stayLocation: "Johannesburg",
+    linkedIn_link: "https://www.linkedin.com/in/dikson-manganye-a8b773213/",
+    portfolioLink: "https://diksonivyson.github.io/My_Portfolio/"
   })
 
   //handlePersonChange
@@ -49,7 +51,9 @@ function App(props) {
             positionProp={person.position} 
             emailProp={person.email}
             numberProp={person.number}
-            locationProp={person.stayLocation} onChange={handlePersonChange} />
+            locationProp={person.stayLocation}
+            linkedIn_linkProp={person.linkedIn_link}
+            portfolioLinkProp={person.portfolioLink} onChange={handlePersonChange} />
     </main>
   )
 }

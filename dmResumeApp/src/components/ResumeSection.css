@@ -30,8 +30,15 @@
     margin-bottom: 0;
 }
 
+.place-holder {
+    background-color: gray;
+    width: 150px;
+    height: 150px;
+}
+
 .place-holder img {
-    width: 110px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .display-info {
@@ -52,4 +59,14 @@
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+/* styling the links */
+.personal-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: blue;
 }
