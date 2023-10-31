@@ -10,7 +10,7 @@ import Experience from './components/Experience.jsx'
 import Save from './components/Save.jsx'
 
 function App(props) {
-  //personal details props.................................................................................................................
+  //personal details props.......................................................................................
   const [person, setPerson] = useState({
     fulName: "Dikson Manganye",
     position: "Front-End Developer",
@@ -20,6 +20,24 @@ function App(props) {
     linkedIn_link: "https://www.linkedin.com/in/dikson-manganye-a8b773213/",
     portfolioLink: "https://diksonivyson.github.io/My_Portfolio/"
   })
+
+  //professional picture props..................................................................................
+  const [picture, setPicture] = useState({
+    pictureVisibility: "place-holder",
+    buttonText: "Don't Show Picture"
+  })
+
+  //function to update the picture state
+  const handlePicture = () => {
+    if (picture.buttonText === "Don't Show Picture") {
+      const new_picture = {...picture, pictureVisibility: "place-holder-hide", buttonText: "Show Picture"};
+      setPicture(new_picture);
+    }
+    else {
+      const new_picture = {...picture, pictureVisibility: "place-holder", buttonText: "Don't Show Picture"};
+      setPicture(new_picture)
+    }
+  }
 
   //handlePersonChange
   const handlePersonChange = (e) => {
@@ -38,7 +56,7 @@ function App(props) {
         <div>
           <ClearButton />
           <CustomizeButton />
-          <ProfessionalPicture />
+          <ProfessionalPicture handlePicture={handlePicture} picture={picture}/>
           <PersonalDetails handlePersonChange={handlePersonChange} person={person}/>
           <Education />
           <Experience />
@@ -53,7 +71,9 @@ function App(props) {
             numberProp={person.number}
             locationProp={person.stayLocation}
             linkedIn_linkProp={person.linkedIn_link}
-            portfolioLinkProp={person.portfolioLink} onChange={handlePersonChange} />
+            portfolioLinkProp={person.portfolioLink}
+            pictureVisibilityProp={picture.pictureVisibility} 
+            onChange={handlePersonChange} />
     </main>
   )
 }

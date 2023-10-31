@@ -5,12 +5,13 @@ import { faEnvelope, faPhone, faLocationDot, faLink } from '@fortawesome/free-so
 import placeholder from './icons/placeholder-icon.jpg'
 import PersonalDetails from './PersonalDetails.jsx'
 
-function ResumeSection({nameProp, positionProp, emailProp, numberProp, locationProp, linkedIn_linkProp, portfolioLinkProp, onChange}) {
+function ResumeSection({nameProp, positionProp, emailProp, numberProp, locationProp, linkedIn_linkProp, portfolioLinkProp, pictureVisibilityProp, onChange}) {
   return (
     <div className='resume-section'>
         <div className='resume-header'>
-          <div className='place-holder'>
+          <div className={pictureVisibilityProp}>
             <img src={placeholder} alt="resume picture" />
+            <h1>{pictureVisibilityProp}</h1>
           </div>
           <div className='personal-info-container'>
               <div className='display-personal-info'>
