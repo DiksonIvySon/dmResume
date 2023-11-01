@@ -24,7 +24,8 @@ function App(props) {
   //professional picture props..................................................................................
   const [picture, setPicture] = useState({
     pictureVisibility: "place-holder",
-    buttonText: "Don't Show Picture"
+    buttonText: "Don't Show Picture",
+//    borderStyle: "sharp-border"
   })
 
   //function to update the picture state
@@ -38,6 +39,11 @@ function App(props) {
       setPicture(new_picture)
     }
   }
+/*
+  const handleBorderStyle = (selectedStyle) => {
+    const new_borderStyle = {...picture, borderStyle: selectedStyle};
+    setPicture(new_borderStyle)
+  }*/
 
   //handlePersonChange
   const handlePersonChange = (e) => {
@@ -61,18 +67,11 @@ function App(props) {
           <Education />
           <Experience />
           <Save />
-          <h1>{person.fulName}</h1>
         </div>
       </div>
       <ResumeSection 
-            nameProp={person.fulName}
-            positionProp={person.position} 
-            emailProp={person.email}
-            numberProp={person.number}
-            locationProp={person.stayLocation}
-            linkedIn_linkProp={person.linkedIn_link}
-            portfolioLinkProp={person.portfolioLink}
-            pictureVisibilityProp={picture.pictureVisibility} 
+            personProp={person}
+            pictureProp={picture} 
             onChange={handlePersonChange} />
     </main>
   )

@@ -8,15 +8,36 @@ import education from './icons/education.png'
 
 function Education() {
   const [visibility, setVisibility] = useState("hide-element");
-  const [educationForm, setEducationForm] = useState("hide-education-form")
+  const [educationForm, setEducationForm] = useState("hide-education-form");
+  const [educationArray, setEducationArray] = useState([]);
+  const [educationInputs, setEducationInputs] = useState({
+    id: 0,
+    school: "",
+    qualification: "",
+    startDate: "",
+    endDate: "",
+    location: ""
+  })
 
-  //the education input states
-  const [school, setSchool] = useState();
-  const [qualification, setQualification] = useState();
-  const [startDate, setStartDate] = useState();
-  const [endDate, setEndDate] = useState();
-  const [location, setLocation] = useState();
+  //function to handle input changes
+  const handleEducationInputs = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    const new_inputs = {...educationInputs, [name]: value};
+    setEducationInputs(new_inputs);
+  }
 
+  //function to handle form submit
+  const handleSubmitEducation = (e) => {
+    e.preventDefault()
+    const new_educationInputs = {...educationInputs, id: educationArray.length}
+    setEducationInputs(new_educationInputs)
+    setEducationArray(educationArray => [...educationArray, {educationInputs}])
+    console.log(educationInputs)
+    console.log(educationArray)
+  }
+
+  
   //toggle visibility of the form
   const handleVisibility = () => {
     if (visibility === "hide-element") {
@@ -29,7 +50,7 @@ function Education() {
     }
   }
 
-  //function to handle add education
+  //function to handle add education form visibility
   const handleAddEducation = () => {
     if (educationForm === "hide-education-form") {
       const newVisibility = "show-education-form"
@@ -55,45 +76,50 @@ function Education() {
       <div className={visibility} >
           <hr />
           <button onClick={handleAddEducation}><FontAwesomeIcon icon={faPlus} /> Add Education </button>
-          <form className={educationForm}>
+          <form className={educationForm} onSubmit={handleSubmitEducation}>
               <label>School: <span>Required</span> <br />
                 <input
                   type="text" 
-                  value={school}
-                  onChange={(e) => setSchool(e.target.value)}
+                  name='school'
+                  value={educationInputs.school}
+                  onChange={handleEducationInputs}
                 />
               </label>
               <label>Qualification: <span>Required</span> <br />
                 <input
                   type="text" 
-                  value={qualification}
-                  onChange={(e) => setQualification(e.target.value)}
+                  name='qualification'
+                  value={educationInputs.qualification}
+                  onChange={handleEducationInputs}
                 />
               </label>
               <label>Start Date: <span>Recommended</span> <br />
                 <input
                   type="number" 
-                  value={startDate}
-                  onChange={(e) => setStartDate(e.target.value)}
+                  name='startDate'
+                  value={educationInputs.startDate}
+                  onChange={handleEducationInputs}
                 />
               </label>
               <label>End Date: <span>Recommended</span> <br />
                 <input
                   type="number" 
-                  value={endDate}
-                  onChange={(e) => setEndDate(e.target.value)}
+                  name='endDate'
+                  value={educationInputs.endDate}
+                  onChange={handleEducationInputs}
                 />
               </label>
               <label>Location: <span>Recommended</span> <br />
                 <input
                   type="text" 
-                  value={location}
-                  onChange={(e) => setLocation(e.target.value)}
+                  name='location'
+                  value={educationInputs.location}
+                  onChange={handleEducationInputs}
                 />
               </label>
               <div className='form-buttons'>
                   <button type='reset'>Reset</button>
-                  <button type='button'>Add</button>
+                  <button type='submit'>Add</button>
               </div>
           </form>
         </div>

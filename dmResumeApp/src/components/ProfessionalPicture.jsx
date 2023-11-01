@@ -5,8 +5,9 @@ import downArrow from './icons/downArrow.png'
 import proPicture from './icons/profilePicture.png'
 import placeholder from './icons/placeholder-icon.jpg'
 
-function ProfessionalPicture({handlePicture, picture}) {
+function ProfessionalPicture({handlePicture, handleBorderStyle, picture}) {
   const [visibility, setVisibility] = useState("hide-element")
+  
 
   //toggle visibility of the form
   const handleVisibility = () => {
@@ -40,7 +41,7 @@ function ProfessionalPicture({handlePicture, picture}) {
                 <button>Upload New Picture</button>
               </div>
               <div className='picture-border-style'>
-                    <dir className='border-style'>
+                    <dir className='border-style' >
                         <div className='border-style-1'>
                           <img src={placeholder} alt="" />
                         </div>

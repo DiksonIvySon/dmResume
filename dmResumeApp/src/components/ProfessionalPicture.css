@@ -31,6 +31,12 @@
     flex-direction: column;
     align-items: center;
     margin: 10px;
+    transition: 0.5s ease-in;
+}
+
+.border-style:hover {
+    color: white;
+    cursor: pointer;
 }
 
 .border-style-1 img {
