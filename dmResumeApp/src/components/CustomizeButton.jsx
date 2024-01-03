@@ -5,8 +5,9 @@ import downArrow from './icons/downArrow.png'
 import customize from './icons/customize.png'
 
 
-function CustomizeButton() {
+function CustomizeButton({handleFontChanges}) {
   const [visibility, setVisibility] = useState("hide-element")
+  //Font state from the customization component 
 
   //toggle visibility of the form
   const handleVisibility = () => {
@@ -36,23 +37,23 @@ function CustomizeButton() {
           <div className='fonts-container'>
             <h1>Fonts</h1>
             <div>
-                <div className='font serif'>
+                <div className='font helvetica' name='helvetica' onClick={handleFontChanges}>  
                   <h1>Aa</h1>
-                  <p>Serif</p>
-                </div>
-                <div className='font sans-serif'>
+                  <p>Helvetica</p>
+                </div> 
+                <div className='font sans-serif' name='sans-serif' onClick={handleFontChanges}> 
                   <h1>Aa</h1>
-                  <p>Sans</p>
+                  <p>Sans-Serif</p>
                 </div>
-                <div className='font time-new-roman'>
+                <div className='font times-new-roman' name='times-new-roman' onClick={handleFontChanges}>
                   <h1>Aa</h1>
-                  <p>Time New Roman</p>
+                  <p>Times New Roman</p>
                 </div>
-                <div className='font arial'>
+                <div className='font arial' name='arial' onClick={handleFontChanges}>
                   <h1>Aa</h1>
                   <p>Arial</p>
                 </div>
-                <div className='font cochin'>
+                <div className='font calibri' name='calibri' onClick={handleFontChanges}> 
                   <h1>Aa</h1>
                   <p>Calibri</p>
                 </div>

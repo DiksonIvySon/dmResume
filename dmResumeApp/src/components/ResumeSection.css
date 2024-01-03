@@ -5,7 +5,27 @@
     background-color: #ccd8da;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 190px 4fr;
+}
+
+#times-new-roman {
+    font-family: 'Times New Roman';
+}
+
+#helvetica {
+    font-family: Helvetica;
+}
+
+#sans-serif {
+    font-family: sans-serif;
+}
+
+#arial {
+    font-family: Arial;
+}
+
+#calibri {
+    font-family: Calibri;
 }
 
 .resume-header {
@@ -74,4 +94,32 @@
     align-items: center;
     gap: 5px;
     color: blue;
+}
+
+/* sty*/
+.displayEducation {
+    padding: 10px;
+}
+
+.educationItem h3 {
+    background-color: #302f44;
+    color: white;
+}
+
+.educationItem-info {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.educationItem-info .left-side {
+    width: 450px;
+    text-align: left;
+}
+
+.educationItem-info .right-side {
+    text-align: left;
+}
+
+.educationItem-info .right-side .school {
+    font-weight: bolder;
 }

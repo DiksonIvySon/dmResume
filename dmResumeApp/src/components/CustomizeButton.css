@@ -27,8 +27,8 @@
     font-family: 'Times New Roman';
 }
 
-.fonts-container .serif {
-    font-family: serif;
+.fonts-container .helvetica {
+    font-family: Helvetica;
 }
 
 .fonts-container .sans-serif {
@@ -39,8 +39,8 @@
     font-family: Arial;
 }
 
-.fonts-container .cochin {
-    font-family: Cochin;
+.fonts-container .calibri {
+    font-family: Calibri;
 }
 
 /* styling the colors */

@@ -10,6 +10,10 @@ import Experience from './components/Experience.jsx'
 import Save from './components/Save.jsx'
 
 function App(props) {
+
+  //Font state from the customization component 
+  const [font, setFont] = useState("Helvetica");
+
   //personal details props.......................................................................................
   const [person, setPerson] = useState({
     fulName: "Dikson Manganye",
@@ -25,8 +29,45 @@ function App(props) {
   const [picture, setPicture] = useState({
     pictureVisibility: "place-holder",
     buttonText: "Don't Show Picture",
-//    borderStyle: "sharp-border"
+    //borderStyle: "sharp-border"
   })
+
+  //education states............................................................................................
+  const [educationArray, setEducationArray] = useState([]);
+  const [educationInputs, setEducationInputs] = useState({
+    id: 0,
+    school: "",
+    qualification: "",
+    startDate: "",
+    endDate: "",
+    location: ""
+  })
+
+  //function to handle font changes
+  const handleFontChanges = (e) => {
+    const newFont = e.target.name;
+    setFont(newFont);
+    console.log(newFont)
+    console.log(font)
+  }
+
+  //function to handle input changes
+  const handleEducationInputs = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    const new_inputs = {...educationInputs, [name]: value};
+    setEducationInputs(new_inputs);
+  }
+
+  //function to handle form submit
+  const handleSubmitEducation = (e) => {
+    e.preventDefault()
+    const new_educationInputs = {...educationInputs, id: educationArray.length}
+    setEducationInputs(new_educationInputs)
+    setEducationArray(educationArray => [...educationArray, {educationInputs}])
+    console.log(educationInputs)
+    console.log(educationArray)
+  }
 
   //function to update the picture state
   const handlePicture = () => {
@@ -61,17 +102,19 @@ function App(props) {
       <div className='main-buttons'>
         <div>
           <ClearButton />
-          <CustomizeButton />
+          <CustomizeButton handleFontChanges={handleFontChanges}/>
           <ProfessionalPicture handlePicture={handlePicture} picture={picture}/>
           <PersonalDetails handlePersonChange={handlePersonChange} person={person}/>
-          <Education />
+          <Education handleEducationInputs={handleEducationInputs} handleSubmitEducation={handleSubmitEducation} educationInputs={educationInputs}/>
           <Experience />
           <Save />
         </div>
       </div>
-      <ResumeSection 
+      <ResumeSection
+            fontProp={font}
             personProp={person}
             pictureProp={picture} 
+            educationArrayProp={educationArray}
             onChange={handlePersonChange} />
     </main>
   )

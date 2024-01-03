@@ -5,9 +5,34 @@ import { faEnvelope, faPhone, faLocationDot, faLink } from '@fortawesome/free-so
 import placeholder from './icons/placeholder-icon.jpg'
 import PersonalDetails from './PersonalDetails.jsx'
 
-function ResumeSection({personProp, pictureProp, onChange}) {
+function ResumeSection({personProp, pictureProp, educationArrayProp, fontProp, onChange}) {
+  //console.log(educationArrayProp[0].startData)
+  const RenderArray = () => {
+    if (educationArrayProp.length > 0) {
+        return (
+          <div className='educationItem'>
+              <h3>EDUCATION</h3>
+              <div className='educationItem-info'>
+                <div className='left-side'>
+                  <p><span>{educationArrayProp[0].startData}</span> - <span>{educationArrayProp[0].endData}</span></p>
+                  <p>{educationArrayProp[0].location}</p>
+                </div>
+                <div className='right-side'>
+                  <p className='school'>{educationArrayProp[0].school}</p>
+                  <p>Bachelors of Accounting</p>
+                  <hr />
+                  <p>Designed and prototyped user interface patterns for various clients in various industries, 
+                    ranging from self-service apps within the telecommunications-sector to mobile games.
+                  </p>
+                </div>
+              </div>
+         </div>
+        );
+    }
+  }
+
   return (
-    <div className='resume-section'>
+    <div className='resume-section' id={fontProp} > 
         <div className='resume-header'>
           <div className={pictureProp.pictureVisibility}>
             <img src={placeholder} alt="resume picture" />
@@ -47,7 +72,13 @@ function ResumeSection({personProp, pictureProp, onChange}) {
               </div>
           </div>
         </div>
-        <div className='display-info'></div>
+        <div className='display-info'>
+          <div className='displayEducation'>
+           <RenderArray />
+    
+          </div>
+          
+        </div>
     </div>
   )
 }

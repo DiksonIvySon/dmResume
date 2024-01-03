@@ -6,36 +6,9 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import downArrow from './icons/downArrow.png'
 import education from './icons/education.png'
 
-function Education() {
+function Education({educationInputs, handleEducationInputs, handleSubmitEducation}) {
   const [visibility, setVisibility] = useState("hide-element");
   const [educationForm, setEducationForm] = useState("hide-education-form");
-  const [educationArray, setEducationArray] = useState([]);
-  const [educationInputs, setEducationInputs] = useState({
-    id: 0,
-    school: "",
-    qualification: "",
-    startDate: "",
-    endDate: "",
-    location: ""
-  })
-
-  //function to handle input changes
-  const handleEducationInputs = (e) => {
-    const name = e.target.name;
-    const value = e.target.value;
-    const new_inputs = {...educationInputs, [name]: value};
-    setEducationInputs(new_inputs);
-  }
-
-  //function to handle form submit
-  const handleSubmitEducation = (e) => {
-    e.preventDefault()
-    const new_educationInputs = {...educationInputs, id: educationArray.length}
-    setEducationInputs(new_educationInputs)
-    setEducationArray(educationArray => [...educationArray, {educationInputs}])
-    console.log(educationInputs)
-    console.log(educationArray)
-  }
 
   
   //toggle visibility of the form
@@ -95,7 +68,7 @@ function Education() {
               </label>
               <label>Start Date: <span>Recommended</span> <br />
                 <input
-                  type="number" 
+                  type="date" 
                   name='startDate'
                   value={educationInputs.startDate}
                   onChange={handleEducationInputs}
@@ -103,7 +76,7 @@ function Education() {
               </label>
               <label>End Date: <span>Recommended</span> <br />
                 <input
-                  type="number" 
+                  type="date" 
                   name='endDate'
                   value={educationInputs.endDate}
                   onChange={handleEducationInputs}
