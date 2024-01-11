@@ -1,7 +1,7 @@
 import React from 'react'
 import './Buttons.css'
-import save from './icons/save.png'
-import download from './icons/download.png'
+import save from '../icons/save.png'
+import download from '../icons/download.png'
 
 
 function Save() {

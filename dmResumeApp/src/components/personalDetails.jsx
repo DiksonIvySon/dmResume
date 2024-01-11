@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import './Buttons.css'
 import './PersonalDetails.css'
-import downArrow from './icons/downArrow.png'
-import personal_Details from './icons/personalDetails.png'
+import downArrow from '../icons/downArrow.png'
+import personal_Details from '../icons/personalDetails.png'
 import ResumeSection from './ResumeSection.jsx'
 
 function PersonalDetails({handlePersonChange, person}) {

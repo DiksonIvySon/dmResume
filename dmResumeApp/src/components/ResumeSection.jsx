@@ -2,7 +2,7 @@ import React from 'react'
 import './ResumeSection.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhone, faLocationDot, faLink } from '@fortawesome/free-solid-svg-icons'
-import placeholder from './icons/placeholder-icon.jpg'
+import placeholder from '../icons/placeholder-icon.jpg'
 import PersonalDetails from './PersonalDetails.jsx'
 
 function ResumeSection({personProp, pictureProp, educationArrayProp, fontProp, onChange}) {

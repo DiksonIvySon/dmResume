@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import './Buttons.css'
 import './CustomizeButton.css'
-import downArrow from './icons/downArrow.png'
-import customize from './icons/customize.png'
+import downArrow from '../icons/downArrow.png'
+import customize from '../icons/customize.png'
 
 
 function CustomizeButton({handleFontChanges}) {

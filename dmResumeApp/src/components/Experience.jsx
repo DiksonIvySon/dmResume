@@ -3,8 +3,8 @@ import './Buttons.css'
 import './Experience.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
-import downArrow from './icons/downArrow.png'
-import experience from './icons/experience.png'
+import downArrow from '../icons/downArrow.png'
+import experience from '../icons/experience.png'
 
 function Experience() {
   const [visibility, setVisibility] = useState("hide-element");

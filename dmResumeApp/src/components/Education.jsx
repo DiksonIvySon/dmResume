@@ -3,8 +3,8 @@ import './Buttons.css'
 import './Education.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
-import downArrow from './icons/downArrow.png'
-import education from './icons/education.png'
+import downArrow from '../icons/downArrow.png'
+import education from '../icons/education.png'
 
 function Education({educationInputs, handleEducationInputs, handleSubmitEducation}) {
   const [visibility, setVisibility] = useState("hide-element");

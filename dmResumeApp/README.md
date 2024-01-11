@@ -1,5 +1,8 @@
 # React + Vite
 
+inspiration:
+https://www.resumebuilder.com/#:~:text=With%20Resume%20Builder%2C%20you'll,and%20an%20AI%20writer%20tool.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

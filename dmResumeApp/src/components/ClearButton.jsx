@@ -1,6 +1,6 @@
 import React from 'react'
 import './Buttons.css'
-import trash from './icons/trash.png'
+import trash from '../icons/trash.png'
 
 
 function ClearButton() {

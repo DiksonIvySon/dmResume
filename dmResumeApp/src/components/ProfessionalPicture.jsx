@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import './Buttons.css'
 import './ProfessionalPicture.css'
-import downArrow from './icons/downArrow.png'
-import proPicture from './icons/profilePicture.png'
-import placeholder from './icons/placeholder-icon.jpg'
+import downArrow from '../icons/downArrow.png'
+import proPicture from '../icons/profilePicture.png'
+import placeholder from '../icons/placeholder-icon.jpg'
 
 function ProfessionalPicture({handlePicture, handleBorderStyle, picture}) {
   const [visibility, setVisibility] = useState("hide-element")
