@@ -1,4 +1,8 @@
-![Alt text](dmResumeApp/src/icons/placeholder-icon.jpg) { style="margin: 0 auto"}
+<div style="width:100px; margin: 0 auto">
+  <img src="dmResumeApp/src/icons/placeholder-icon.jpg" />
+</div>
+
+---
 
 dmResume is a Resume Builder web app, which allows a user to build a resume from a template. dmResume offers a quick and easy way to create a professional resume from 3 design templates. Users can create a resume using the AI-powered online resume wizard, plus take advantage of expert suggestions and customizable modern and professional resume templates.
 
