@@ -2,9 +2,7 @@
 
 dmResume is a Resume Builder web app, which allows a user to build a resume from a template. dmResume offers a quick and easy way to create a professional resume from 3 design templates. Users can create a resume using the AI-powered online resume wizard, plus take advantage of expert suggestions and customizable modern and professional resume templates.
 
----
-
-![alt dmResume web app picture](images/dmResume-picture.png)
+![Alt dmResume web app image](dmResumeApp/src/images/dmResume-picture.png)
 
 ## Instructions and Usage
 
