@@ -98,6 +98,8 @@ function App(props) {
   }
 
   return (
+    <>
+    <Header />
     <main className='app'>
       <div className='main-buttons'>
         <div>
@@ -117,6 +119,8 @@ function App(props) {
             educationArrayProp={educationArray}
             onChange={handlePersonChange} />
     </main>
+    <Footer />
+    </>
   )
 }
 
