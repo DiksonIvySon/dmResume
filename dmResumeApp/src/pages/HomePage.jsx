@@ -7,6 +7,9 @@ import cv_image1 from '../images/cv-image1.png';
 import cv_person1 from '../images/cv-person.webp'; 
 import cv_person2 from '../images/cv-person2.webp'; 
 import arrow_icon from '../images/arrow.png';
+import step1 from '../images/step1.webp'; 
+import step2 from '../images/step2.webp';
+import step3 from '../images/step3.webp';
 
 function HomePage() {
   return (
@@ -94,6 +97,35 @@ function HomePage() {
                     <img src={cv_person2} alt="Resume image" />
                 </div>
             </div>
+        </section>
+        <section className='steps-section'>
+            <div className='steps-section-container'>
+                <div>
+                    <h1>Step 1</h1>
+                    <div className='step-image'>
+                        <img src={step1} alt="step image" />
+                    </div>
+                    <h2>Choose a template</h2>
+                    <p>Choose a suitable CV from our template library.</p>
+                </div>
+                <div>
+                    <h1>Step 2</h1>
+                    <div className='step-image'>
+                        <img src={step2} alt="step image" />
+                    </div>
+                    <h2>Fill in your details</h2>
+                    <p>Type your information and also look at the suggestions for help.</p>
+                </div>
+                <div>
+                    <h1>Step 3</h1>
+                    <div className='step-image'>
+                        <img src={step3} alt="step image" />
+                    </div>
+                    <h2>Customize your document.</h2>
+                    <p>Make it truly yours. Uniqueness in a few clicks.</p>
+                </div>
+            </div>
+            
         </section>
 
         

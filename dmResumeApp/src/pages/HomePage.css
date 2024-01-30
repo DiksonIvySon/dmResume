@@ -114,6 +114,27 @@
     text-align: center;
 }
 
+/* ............................................................................................... */
+
+.steps-section-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-image: linear-gradient(70deg, gray, gray, rgb(70, 140, 187));
+}
+
+.steps-section-container .step-image {
+    width: 100%;
+}
+
+.steps-section-container .step-image img {
+    width: 100%;
+}
+
+.steps-section-container p {
+    margin: 0;
+}
+
 @media (max-width:1000px) {
     .landingPage .landingPage-content {
         flex-direction: column;
