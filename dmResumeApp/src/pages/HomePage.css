@@ -1,0 +1,66 @@
+
+
+.landingPage {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.landingPage .background1 {
+    margin: 0;
+    width: 100%;
+    height: 692px;
+}
+
+.landingPage .background1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.landingPage .landingPage-content {
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.landingPage .landingPage-content > div {
+    max-width: 800px;
+    min-width: 300px;
+    margin-inline: 10px;
+}
+
+.landingPage .landingPage-content h1,h2,p{
+    font-size: 20px;
+    margin:20px 5px;
+    color: white;
+}
+
+.landingPage .landingPage-content h1 {
+    font-size: 40px;
+    color: rgb(108, 140, 228);
+}
+
+.landingPage .landingPage-content .cv-image1 {
+    width: 100%;
+    margin-top: 20px;
+    max-width: 500px;
+}
+
+.landingPage .landingPage-content .cv-image1 img{
+    width: 100%;
+}
+
+@media (max-width:1000px) {
+    .landingPage .landingPage-content {
+        flex-direction: column;
+    }
+
+    .landingPage .landingPage-content {
+        top: 350px;
+    }
+}

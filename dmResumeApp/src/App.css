@@ -1,8 +1,6 @@
 #root {
-  max-width: 1600px;
+  max-width: 1800px;
   margin: 0 auto;
-  padding-inline: 2%;
-  text-align: center;
 }
 
 .app {
@@ -16,4 +14,8 @@
 
 .main-buttons {
   background-color: #ccd8da;
+}
+
+.section-margin {
+  margin-inline: 60px;
 }
