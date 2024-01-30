@@ -46,7 +46,7 @@ function HomePage() {
                     </p>
                     <div className='list-item'>
                         <img src={arrow_icon} alt="arrow icon" />
-                        <p>Easier and faster than a conventional editor</p>
+                        <p>Easier and faster than a conventional editor.</p>
                     </div>
                     <div className='list-item'>
                         <img src={arrow_icon} alt="arrow icon" />
@@ -58,12 +58,40 @@ function HomePage() {
                     </div>
                     <div className='list-item'>
                         <img src={arrow_icon} alt="arrow icon" />
-                        <p>Follow expert tips and examples</p>
+                        <p>Follow expert tips and examples.</p>
                     </div>
                     <div className='list-item'>
                         <img src={arrow_icon} alt="arrow icon" />
                         <p>Work on the go!</p>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section className='time-section section-margin'>
+            <div className='time-section-content'>
+                <div>
+                    <h1>Create or update your resume on the go!</h1>
+                    <div className='center-text'>
+                        <div className='list-item'>
+                            <img src={arrow_icon} alt="arrow icon" />
+                            <p>Quickly make stunning resumes in just a few minutes.</p>
+                        </div>
+                        <div className='list-item'>
+                            <img src={arrow_icon} alt="arrow icon" />
+                            <p>Writing your resume couldn't be easier with our step-by-step guidance!</p>
+                        </div>
+                        <div className='list-item'>
+                            <img src={arrow_icon} alt="arrow icon" />
+                            <p>Pick from a range of styles to make your resume shine!</p>
+                        </div>
+                        <div className='list-item'>
+                            <img src={arrow_icon} alt="arrow icon" />
+                            <p>Create, edit, and send resumes from your laptop, tablet or phone.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className='cv-person1'>
+                    <img src={cv_person2} alt="Resume image" />
                 </div>
             </div>
         </section>

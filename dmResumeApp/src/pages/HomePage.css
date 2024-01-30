@@ -107,7 +107,11 @@
     align-items: center;
     font-size: 25px;
     font-weight: 500;
-    margin-top: 10px;
+    margin-top: 20px;
+}
+
+.time-section .center-text {
+    text-align: center;
 }
 
 @media (max-width:1000px) {
