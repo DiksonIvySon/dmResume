@@ -166,7 +166,7 @@ function HomePage() {
         </section>
 
         
-        {/*}<Footer />}{*/}
+        <Footer />
     </div>
   )
 }
