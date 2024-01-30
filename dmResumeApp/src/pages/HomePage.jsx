@@ -10,6 +10,8 @@ import arrow_icon from '../images/arrow.png';
 import step1 from '../images/step1.webp'; 
 import step2 from '../images/step2.webp';
 import step3 from '../images/step3.webp';
+import process_gif from '../images/process-gif.gif';
+import ai_gen from '../images/ai-gen.webp';
 
 function HomePage() {
   return (
@@ -124,8 +126,43 @@ function HomePage() {
                     <h2>Customize your document.</h2>
                     <p>Make it truly yours. Uniqueness in a few clicks.</p>
                 </div>
+            </div>  
+        </section>
+        <section className='time-section section-margin'>
+            <h1>Now, AI suggests content for you, give it a try!</h1>
+            <div className='time-section-content'>
+                <div className='cv-person1'>
+                    <img src={process_gif} alt="process gif" />
+                </div>
+                <div>
+                    <div className='cv-person1'>
+                        <img src={ai_gen} alt="AI generator image" />
+                    </div>
+                    <p>
+                        Enter your profession in the search bar and choose from the tailored results 
+                        recommended by AI (Artificial Intelligence).
+                    </p>
+                    <div className='list-item'>
+                        <img src={arrow_icon} alt="arrow icon" />
+                        <p>Developed by ChatGPT.</p>
+                    </div>
+                    <div className='list-item'>
+                        <img src={arrow_icon} alt="arrow icon" />
+                        <p>Suggestions in seconds.</p>
+                    </div>
+                    <div className='list-item'>
+                        <img src={arrow_icon} alt="arrow icon" />
+                        <p>Natural language.</p>
+                    </div>
+                    <div className='list-item'>
+                        <img src={arrow_icon} alt="arrow icon" />
+                        <p>Suitable for ATS.</p>
+                    </div>
+                    <div className='button-margin'>
+                        <button className='button2'>Create your CV</button>
+                    </div>
+                </div>
             </div>
-            
         </section>
 
         
