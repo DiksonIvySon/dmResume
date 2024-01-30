@@ -1,5 +1,6 @@
 import React from 'react'
 import './Header.css'
+import logo_icon from '../images/logo-icon.png';
 
 
 function header() {
@@ -8,6 +9,7 @@ function header() {
         <div className='logo'>
             <h4>DM</h4>
             <h1>RESUME</h1>
+            <img className='logo-icon' src={logo_icon} alt="Logo icon" />
         </div>
         <div className='headerLinks'>
           <a href="">
