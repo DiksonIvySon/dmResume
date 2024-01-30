@@ -1,4 +1,7 @@
-
+.homePage {
+    color: black;
+    font-size: 20px;
+}
 
 .landingPage {
     margin: 0;
@@ -9,7 +12,7 @@
 .landingPage .background1 {
     margin: 0;
     width: 100%;
-    height: 692px;
+    height: 650px;
 }
 
 .landingPage .background1 img {
@@ -22,7 +25,7 @@
 
 .landingPage .landingPage-content {
     position: absolute;
-    bottom: 0px;
+    bottom: -30px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -34,7 +37,19 @@
     margin-inline: 10px;
 }
 
-.landingPage .landingPage-content h1,h2,p{
+.landingPage .landingPage-content h1{
+    font-size: 20px;
+    margin:20px 5px;
+    color: white;
+}
+
+.landingPage .landingPage-content h2{
+    font-size: 20px;
+    margin:20px 5px;
+    color: white;
+}
+
+.landingPage .landingPage-content p{
     font-size: 20px;
     margin:20px 5px;
     color: white;
@@ -42,7 +57,7 @@
 
 .landingPage .landingPage-content h1 {
     font-size: 40px;
-    color: rgb(108, 140, 228);
+    color: rgb(94, 146, 196);
 }
 
 .landingPage .landingPage-content .cv-image1 {
@@ -55,6 +70,46 @@
     width: 100%;
 }
 
+/* ..................................................................................... */
+.time-section {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.time-section h1{
+    font-size: 40px;
+    text-align: center;
+    margin: 50px auto;
+    max-width: 500px;
+}
+
+.time-section .time-section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.time-section .time-section-content > div {
+    max-width: 600px;
+    flex: 1;
+}
+
+.time-section .time-section-content .cv-person1 {
+    width: 100%;
+}
+
+.time-section .time-section-content .cv-person1 img{
+    width: 100%;
+}
+
+.time-section .list-item {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
 @media (max-width:1000px) {
     .landingPage .landingPage-content {
         flex-direction: column;
@@ -62,5 +117,13 @@
 
     .landingPage .landingPage-content {
         top: 350px;
+    }
+
+    .landingPage {
+        margin-bottom: 400px;
+    }
+
+    .time-section .time-section-content {
+        flex-direction: column;
     }
 }
