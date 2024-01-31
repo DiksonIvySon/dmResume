@@ -6,9 +6,10 @@ import Header from './components/header.jsx'
 import './index.css'
 import HomePage from './pages/HomePage.jsx';
 import ResumePage from './pages/ResumePage.jsx'
+import TemplatePage from './pages/TemplatePage.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <HomePage />
+    <TemplatePage />
   </React.StrictMode>,
 )
