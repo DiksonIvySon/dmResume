@@ -1,8 +1,15 @@
 .logo {
+    max-width: 200px;
+    max-height: 45px;
+    margin-top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+}
+
+.logo h1 {
+    margin: 0;
 }
 
 .logo .logo-icon {
@@ -15,8 +22,11 @@
 
 .header {
     max-height: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .headerLinks {

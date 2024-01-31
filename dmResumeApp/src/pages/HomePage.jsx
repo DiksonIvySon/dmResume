@@ -36,7 +36,7 @@ function HomePage() {
                 </div>
             </div>
         </section>
-        <section className='time-section section-margin'>
+        <section className='time-section section-margin' id='time'>
             <h1>Create your winning resume in just 15 minutes</h1>
             <div className='time-section-content'>
                 <div className='cv-person1'>
@@ -72,7 +72,7 @@ function HomePage() {
                 </div>
             </div>
         </section>
-        <section className='time-section section-margin'>
+        <section className='time-section section-margin' id='on-the-go'>
             <div className='time-section-content'>
                 <div>
                     <h1>Create or update your resume on the go!</h1>
@@ -100,7 +100,7 @@ function HomePage() {
                 </div>
             </div>
         </section>
-        <section className='steps-section'>
+        <section className='steps-section' id='steps-guide'>
             <div className='steps-section-container'>
                 <div>
                     <h1>Step 1</h1>
@@ -128,7 +128,7 @@ function HomePage() {
                 </div>
             </div>  
         </section>
-        <section className='time-section section-margin'>
+        <section className='time-section section-margin' id='suggestions'>
             <h1>Now, AI suggests content for you, give it a try!</h1>
             <div className='time-section-content'>
                 <div className='cv-person1'>
