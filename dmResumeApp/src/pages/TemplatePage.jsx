@@ -226,6 +226,7 @@ function TemplatePage() {
                 </div>
             </div>
         </section>
+        <Footer />
     </div>
   )
 }
