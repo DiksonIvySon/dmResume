@@ -32,6 +32,7 @@
     max-height: 550px;
     padding: 20px;
     margin: 20px;
+    border-radius: 5px;
     background-color: gray;
     position: relative;
 }
@@ -46,6 +47,7 @@
     height: 450px;
     padding: 20px;
     margin: 20px;
+    border-radius: 5px;
     background-color: gray;
 }
 
@@ -55,6 +57,18 @@
     left: -30%;
     translate: -50% -53%;
     z-index: -1;
+    animation: left_slide 1s ease-in 0s 1 ;
+}
+
+@keyframes left_slide {
+    0% {
+        transform: translateX(150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
 
 .templatePage .intro-templates .right {
@@ -63,4 +77,76 @@
     right: -110%;
     translate: -50% -53%;
     z-index: -1;
+    animation: right_slide 1s ease-in 0s 1 ;
+}
+
+@keyframes right_slide {
+    0% {
+        transform: translateX(-150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/* Styling template */
+.templates-section {
+    font-size: 20px;
+}
+
+.templates-section > h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+.templates-section > p {
+    text-align: center;
+    max-width: 450px;
+    margin: auto;
+}
+
+.templates-section .templates-list-container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.template-con {
+    max-width: 400px;
+    margin: 20px;
+}
+
+.template-con .template-image {
+    max-width: 400px;
+}
+
+.template-con .template-image img {
+    width: 100%;
+    border: 1px solid rgb(219, 216, 216);
+    border-radius: 5px;
+}
+
+.template-con .template-stars-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.template-con .template-stars img {
+    max-width: 20px;
+}
+
+.template-con .template-stars-con .cv_type {
+    padding: 10px;
+    background-image: linear-gradient(70deg, #ccd8da, #ccd8da, rgb(161, 204, 224));
+    border-radius: 10px;
+}
+
+.template-con .template-dec {
+    margin-top: 5px;
+    color: gray;
 }
