@@ -14,6 +14,9 @@ import cv_image8 from '../images/cv_image8.webp';
 import cv_image9 from '../images/cv_image9.webp';
 import cv_image10 from '../images/cv_image10.webp';
 import one_star from '../images/one-star.png';
+import wallet from '../images/wallet.png';
+import briefcase from '../images/briefcase.png';
+import creating_image from '../images/creating-image.jpeg';
 
 function TemplatePage() {
   return (
@@ -26,12 +29,12 @@ function TemplatePage() {
             </div>
             <div className='intro-templates'>
                 <div>
-                    <img src={cv_image2} alt="cv image" />
+                    <img src={creating_image} alt="creating image" />
                     <div className='smaller-sized left'>
-                        <img src={cv_image4} alt="cv image" />
+                        <img src={wallet} alt="wallet image" />
                     </div>
                     <div className='smaller-sized right'>
-                        <img src={cv_image3} alt="cv image" />
+                        <img src={briefcase} alt="briefcase image" />
                     </div>
                 </div>
             </div>
