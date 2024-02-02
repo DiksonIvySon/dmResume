@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './TemplatePage.css';
 import Footer from '../components/footer';
 import Header from '../components/header';
@@ -19,6 +19,18 @@ import briefcase from '../images/briefcase.png';
 import creating_image from '../images/creating-image.jpeg';
 
 function TemplatePage() {
+    const [overlay, setOverlay] = useState("template-overlay-hide");
+
+    function handleOverlay(e) {
+        if (overlay === "template-overlay-hide") {
+            setOverlay("template-overlay-show");
+        }
+        else {
+            setOverlay("template-overlay-hide");
+        }
+        console.log(overlay);
+    }
+
   return (
     <div className='templatePage'>
         <Header />
@@ -47,8 +59,12 @@ function TemplatePage() {
             </p>
             <div className='templates-list-container'>
                 <div className='template-con'>
-                    <div className='template-image'>
+                    <div className='template-image' onMouseEnter={handleOverlay} onMouseLeave={handleOverlay}>
                         <img src={cv_image2} alt="cv template" />
+                        <div className={overlay} >
+                            <div className='image-overlay'></div>
+                            <button >Use Template</button>
+                        </div>
                     </div>
                     <div className='template-stars-con'>
                         <div className='template-stars'>
@@ -67,8 +83,12 @@ function TemplatePage() {
                     <p className='template-dec'>A traditional and elegant design.</p>
                 </div>
                 <div className='template-con'>
-                    <div className='template-image'>
+                    <div className='template-image' onMouseEnter={handleOverlay} onMouseLeave={handleOverlay}>
                         <img src={cv_image6} alt="cv template" />
+                        <div className={overlay} >
+                            <div className='image-overlay'></div>
+                            <button >Use Template</button>
+                        </div>
                     </div>
                     <div className='template-stars-con'>
                         <div className='template-stars'>
@@ -89,6 +109,10 @@ function TemplatePage() {
                 <div className='template-con'>
                     <div className='template-image'>
                         <img src={cv_image4} alt="cv template" />
+                        <div className={overlay} >
+                            <div className='image-overlay'></div>
+                            <button >Use Template</button>
+                        </div>
                     </div>
                     <div className='template-stars-con'>
                         <div className='template-stars'>
@@ -109,6 +133,10 @@ function TemplatePage() {
                 <div className='template-con'>
                     <div className='template-image'>
                         <img src={cv_image9} alt="cv template" />
+                        <div className={overlay} >
+                            <div className='image-overlay'></div>
+                            <button >Use Template</button>
+                        </div>
                     </div>
                     <div className='template-stars-con'>
                         <div className='template-stars'>
@@ -129,6 +157,10 @@ function TemplatePage() {
                 <div className='template-con'>
                     <div className='template-image'>
                         <img src={cv_image3} alt="cv template" />
+                        <div className={overlay} >
+                            <div className='image-overlay'></div>
+                            <button >Use Template</button>
+                        </div>
                     </div>
                     <div className='template-stars-con'>
                         <div className='template-stars'>
@@ -149,6 +181,10 @@ function TemplatePage() {
                 <div className='template-con'>
                     <div className='template-image'>
                         <img src={cv_image7} alt="cv template" />
+                        <div className={overlay} >
+                            <div className='image-overlay'></div>
+                            <button >Use Template</button>
+                        </div>
                     </div>
                     <div className='template-stars-con'>
                         <div className='template-stars'>
@@ -169,6 +205,10 @@ function TemplatePage() {
                 <div className='template-con'>
                     <div className='template-image'>
                         <img src={cv_image8} alt="cv template" />
+                        <div className={overlay} >
+                            <div className='image-overlay'></div>
+                            <button >Use Template</button>
+                        </div>
                     </div>
                     <div className='template-stars-con'>
                         <div className='template-stars'>
@@ -189,6 +229,10 @@ function TemplatePage() {
                 <div className='template-con'>
                     <div className='template-image'>
                         <img src={cv_image5} alt="cv template" />
+                        <div className={overlay} >
+                            <div className='image-overlay'></div>
+                            <button >Use Template</button>
+                        </div>
                     </div>
                     <div className='template-stars-con'>
                         <div className='template-stars'>
@@ -208,8 +252,11 @@ function TemplatePage() {
                 </div>
                 <div className='template-con'>
                     <div className='template-image'>
-                        <img src={cv_image10  
-                        } alt="cv template" />
+                        <img src={cv_image10} alt="cv template" />
+                        <div className={overlay} >
+                            <div className='image-overlay'></div>
+                            <button >Use Template</button>
+                        </div>
                     </div>
                     <div className='template-stars-con'>
                         <div className='template-stars'>
