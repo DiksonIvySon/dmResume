@@ -31,6 +31,16 @@ function TemplatePage() {
         console.log(overlay);
     }
 
+    function handleOverlay2(e) {
+        if (overlay === "template-overlay-hide") {
+            setOverlay("template-overlay-show");
+        }
+        else {
+            setOverlay("template-overlay-hide");
+        }
+        console.log(overlay);
+    }
+
   return (
     <div className='templatePage'>
         <Header />
