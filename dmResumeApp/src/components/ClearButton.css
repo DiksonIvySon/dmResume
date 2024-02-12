@@ -1,0 +1,16 @@
+.clearButton h1 {
+    text-align: center;
+}
+
+.clearButton .clearButton-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   gap: 10px; 
+}
+
+.clearButton .clearButton-buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import './App.css'
 import ResumeSection from './components/ResumeSection.jsx'
+import Header from './components/Header.jsx'
+import Footer from './components/footer.jsx'
+
 import ClearButton from './components/ClearButton.jsx'
 import CustomizeButton from './components/CustomizeButton.jsx'
 import ProfessionalPicture from './components/ProfessionalPicture.jsx'

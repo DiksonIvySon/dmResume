@@ -1,0 +1,16 @@
+
+
+.save .saveButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.save .saveButtons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 180px;
+    flex-wrap: wrap;
+}

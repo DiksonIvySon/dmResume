@@ -10,6 +10,6 @@ import TemplatePage from './pages/TemplatePage.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <TemplatePage />
+    <App />
   </React.StrictMode>,
 )

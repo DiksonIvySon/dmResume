@@ -1,13 +1,12 @@
-import React, { useState } from 'react'
-import './Buttons.css'
-import './CustomizeButton.css'
-import downArrow from '../icons/downArrow.png'
-import customize from '../icons/customize.png'
+import React, { useState } from 'react';
+import './CustomizeButton.css';
+import downArrow from '../icons/downArrow.png';
+import customize from '../icons/customize.png'; 
 
 
 function CustomizeButton({handleFontChanges}) {
   const [visibility, setVisibility] = useState("hide-element")
-  //Font state from the customization component 
+  
 
   //toggle visibility of the form
   const handleVisibility = () => {
@@ -22,17 +21,17 @@ function CustomizeButton({handleFontChanges}) {
   }
 
   return (
-    <div className='CustomizeButton'>
-        <div className='mainButton'>
+    <div className='customizeButton'>
+        <div className='mainButton' onClick={handleVisibility}> 
           <div>
               <img src={customize} alt="" />
               <p>Customize Resume</p>
           </div>
-          <div className='downArrow' onClick={handleVisibility}>
+          <div className='downArrow'>
               <img src={downArrow} alt="" />
           </div>
         </div>
-        <div className={visibility} >
+        <div className={visibility}>
           <hr />
           <div className='fonts-container'>
             <h1>Fonts</h1>
@@ -53,9 +52,9 @@ function CustomizeButton({handleFontChanges}) {
                   <h1>Aa</h1>
                   <p>Arial</p>
                 </div>
-                <div className='font calibri' name='calibri' onClick={handleFontChanges}> 
+                <div className='font cursive' name='cursive' onClick={handleFontChanges}> 
                   <h1>Aa</h1>
-                  <p>Calibri</p>
+                  <p>Cursive</p>
                 </div>
             </div>
           </div>

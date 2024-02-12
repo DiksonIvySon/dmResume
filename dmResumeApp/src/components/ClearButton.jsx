@@ -1,19 +1,26 @@
 import React from 'react'
-import './Buttons.css'
-import trash from '../icons/trash.png'
+import './ClearButton.css'
+import { GoTrash } from "react-icons/go";
+import { AiFillDiff } from "react-icons/ai";
 
 
 function ClearButton() {
   return (
-    <div className='clearButton mainButton'>
-        <div>
-            <img src={trash} alt="" />
-            <p>Clear Resume</p>
-        </div>
-        <div>
-            <button>
-                Load Example
+    <div className='clearButton'>
+      <h1>Here is your resume</h1>
+        <div className='clearButton-buttons'>
+          <div>
+            <button className='button2'>
+              <GoTrash />
+              <p>Clear Resume</p>
             </button>
+          </div>
+          <div>
+              <button className='button2'>
+                <AiFillDiff />
+                Load Example
+              </button>
+          </div>
         </div>
     </div>
   )

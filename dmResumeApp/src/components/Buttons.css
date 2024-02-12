@@ -1,6 +1,4 @@
 .mainButton {
-    background-color: white;
-    border-radius: 15px;
     padding: 10px;
     margin: 10px;
     display: flex;
@@ -63,4 +61,18 @@ p {
 .show-element {
     display: block;
     margin-inline: 5px;
+    animation: slideDown 0.8s ease-in-out 0s 1 ;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    90% {
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 1;
+    }
 }
