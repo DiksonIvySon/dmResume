@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import ResumeSection from './components/ResumeSection.jsx'
-import Header from './components/Header.jsx'
+import ResumeHeader from './components/ResumeHeader.jsx'
 import Footer from './components/footer.jsx'
 
 import ClearButton from './components/ClearButton.jsx'
@@ -102,7 +102,7 @@ function App(props) {
 
   return (
     <>
-    <Header />
+    <ResumeHeader />
     <main className='app'>
       <div className='main-buttons'>
         <div>

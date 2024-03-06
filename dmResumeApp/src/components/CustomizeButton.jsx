@@ -37,6 +37,7 @@ function CustomizeButton({handleFontChanges}) {
             <h1>Fonts</h1>
             <div>
                 <div className='font helvetica' name='helvetica' onClick={handleFontChanges}>  
+                
                   <h1>Aa</h1>
                   <p>Helvetica</p>
                 </div> 

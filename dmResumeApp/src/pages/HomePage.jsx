@@ -1,7 +1,10 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import './HomePage.css';
+
 import Footer from '../components/footer.jsx';
 import Header from '../components/header.jsx';
+
 import background1 from '../images/background1.jpg';
 import cv_image1 from '../images/cv-image1.png';
 import cv_person1 from '../images/cv-person.webp'; 
@@ -29,7 +32,9 @@ function HomePage() {
                         If a sheet of paper represents your entire work life, personality, and skills, 
                         it better be a pretty amazing piece of paper — Let dmResume do the heavy lifting.
                     </p>
-                    <button className='button2'>Create your CV</button>
+                    <Link to="/templatesPage">
+                        <button className='button2'>Create your CV</button>
+                    </Link>
                 </div>
                 <div className='cv-image1'>
                     <img src={cv_image1} alt="Resume image" />
@@ -159,7 +164,9 @@ function HomePage() {
                         <p>Suitable for ATS.</p>
                     </div>
                     <div className='button-margin'>
-                        <button className='button2'>Create your CV</button>
+                        <Link to="/templatesPage">
+                            <button className='button2'>Create your CV</button>
+                        </Link>
                     </div>
                 </div>
             </div>

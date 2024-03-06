@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import './Footer.css';
 import github from '../icons/github.svg';
 import linkedin from '../icons/linkedin.svg';
@@ -36,7 +37,7 @@ function Footer() {
                     <a href="">How To Write a Resume</a>
                     <a href="">Resume Builder App</a>
                     <a href="">Resume Examples</a>
-                    <a href="">Resume Templates</a>
+                    <Link to="/templatesPage">Resume Templates</Link>
                 </div>
             </div>
             <div className='footer-links'>
@@ -66,7 +67,7 @@ function Footer() {
 
         <hr className='section-margin'/>
         <p className='footer-copyright section-margin'>
-            Copyright © 2023 <a target="_blank" 
+            Copyright © 2024 <a target="_blank" 
                                 href="https://diksonivyson.github.io/My_Portfolio/" 
                                 className="web-author"
                             >Dikson Manganye</a>

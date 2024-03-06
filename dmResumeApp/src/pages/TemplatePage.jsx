@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import './TemplatePage.css';
 import Footer from '../components/footer';
-import Header from '../components/header';
+import ResumeHeader from '../components/ResumeHeader';
 
 import handshake from '../images/handshake.jpg';
 import cv_image2 from '../images/cv-image2.webp';
@@ -43,7 +44,7 @@ function TemplatePage() {
 
   return (
     <div className='templatePage'>
-        <Header />
+        <ResumeHeader />
         <section className='templatePage-landing-page'>
             <div className='banner'>
                 <img src={handshake} alt="handshake banner background" />
@@ -73,7 +74,9 @@ function TemplatePage() {
                         <img src={cv_image2} alt="cv template" />
                         <div className={overlay} >
                             <div className='image-overlay'></div>
-                            <button >Use Template</button>
+                            <Link to="/resumePage">
+                                <button >Use Template</button>
+                            </Link>
                         </div>
                     </div>
                     <div className='template-stars-con'>
@@ -97,7 +100,9 @@ function TemplatePage() {
                         <img src={cv_image6} alt="cv template" />
                         <div className={overlay} >
                             <div className='image-overlay'></div>
-                            <button >Use Template</button>
+                            <Link to="/resumePage">
+                                <button >Use Template</button>
+                            </Link>
                         </div>
                     </div>
                     <div className='template-stars-con'>
@@ -121,7 +126,9 @@ function TemplatePage() {
                         <img src={cv_image4} alt="cv template" />
                         <div className={overlay} >
                             <div className='image-overlay'></div>
-                            <button >Use Template</button>
+                            <Link to="/resumePage">
+                                <button >Use Template</button>
+                            </Link>
                         </div>
                     </div>
                     <div className='template-stars-con'>
@@ -145,7 +152,9 @@ function TemplatePage() {
                         <img src={cv_image9} alt="cv template" />
                         <div className={overlay} >
                             <div className='image-overlay'></div>
-                            <button >Use Template</button>
+                            <Link to="/resumePage">
+                                <button >Use Template</button>
+                            </Link>
                         </div>
                     </div>
                     <div className='template-stars-con'>
@@ -169,7 +178,9 @@ function TemplatePage() {
                         <img src={cv_image3} alt="cv template" />
                         <div className={overlay} >
                             <div className='image-overlay'></div>
-                            <button >Use Template</button>
+                            <Link to="/resumePage">
+                                <button >Use Template</button>
+                            </Link>
                         </div>
                     </div>
                     <div className='template-stars-con'>
@@ -193,7 +204,9 @@ function TemplatePage() {
                         <img src={cv_image7} alt="cv template" />
                         <div className={overlay} >
                             <div className='image-overlay'></div>
-                            <button >Use Template</button>
+                            <Link to="/resumePage">
+                                <button >Use Template</button>
+                            </Link>
                         </div>
                     </div>
                     <div className='template-stars-con'>
@@ -217,7 +230,9 @@ function TemplatePage() {
                         <img src={cv_image8} alt="cv template" />
                         <div className={overlay} >
                             <div className='image-overlay'></div>
-                            <button >Use Template</button>
+                            <Link to="/resumePage">
+                                <button >Use Template</button>
+                            </Link>
                         </div>
                     </div>
                     <div className='template-stars-con'>
@@ -241,7 +256,9 @@ function TemplatePage() {
                         <img src={cv_image5} alt="cv template" />
                         <div className={overlay} >
                             <div className='image-overlay'></div>
-                            <button >Use Template</button>
+                            <Link to="/resumePage">
+                                <button >Use Template</button>
+                            </Link>
                         </div>
                     </div>
                     <div className='template-stars-con'>
@@ -265,7 +282,9 @@ function TemplatePage() {
                         <img src={cv_image10} alt="cv template" />
                         <div className={overlay} >
                             <div className='image-overlay'></div>
-                            <button >Use Template</button>
+                            <Link to="/resumePage">
+                                <button >Use Template</button>
+                            </Link>
                         </div>
                     </div>
                     <div className='template-stars-con'>

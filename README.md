@@ -9,7 +9,7 @@ dmResume is a Resume Builder web app, which allows a user to build a resume from
 ![Alt dmResume web app image](dmResumeApp/src/images/dmResume-picture.png)
 
 ## Programming Languages and tools used
-React + vit
+React + vite
 
 ## Instructions and Usage
 
